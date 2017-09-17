@@ -1,0 +1,46 @@
+* {
+	font-family: tahoma;
+	font-size: 16px;
+}
+fieldset {
+	border: 5px groove blue;
+	width: 50%;
+	min-width: 500px;
+	margin: auto;
+	margin-top: 200px;
+}
+.row {
+	margin: 5px 5px;
+	padding: 2px 2px;
+	clear: both;
+}
+.row label {
+	float: left;
+	width: 15%;
+}
+.row div.form-control input {
+	border-radius: 5px;
+	border: 1px solid silver;
+}
+.row div.form-control textarea {
+	border-radius: 5px;
+	border: 1px solid silver;	
+}
+.w-30 {
+	width: 30%;
+}
+.w-50 {
+	width: 50%;
+}
+.msg-error {
+	font-size: 13px;
+	color: red;
+}
+.msg-success {
+	font-size: 13px;
+	color: green;
+}
+.msg-suggest {
+	font-size: 13px;
+	color: gray;
+}

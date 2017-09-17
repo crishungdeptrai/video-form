@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>video form</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<fieldset>
+		<form action="#">
+			<div class="row">
+				<label for="video-id">Video ID:</label>
+				<div class="form-control">
+					<input type="text" name="video-id" id="video-id" onkeydown="isValidVideoID();">
+					<span id="video-id-error" class="msg-suggest">Video ID phải dài hơn 10 ký tự</span>
+				</div>
+			</div>
+
+			<div class="row">
+				<label for="video-name">Video Name:</label>
+				<div class="form-control">
+					<input type="text" name="video-name" class="w-50" id="video-name" onkeydown="isValidVideoName();">
+					<span id="video-name-error" class="msg-suggest">Tên video phải nằm trong khoảng 3 - 50 ký tự</span>
+				</div>
+			</div>
+
+			<div class="row">
+				<label for="video-decription">Video Decription:</label>
+				<div class="form-control">
+					<textarea name="video-decription" rows="10" class="w-50"></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<label for="video-keyword">Video Keyword:</label>
+				<div class="form-control">
+					<input type="text" name="video-keyword" class="w-30">
+				</div>
+			</div>
+
+			<div class="row">
+				<label for="video-category">Video Category:</label>
+				<div class="form-control">
+					<input type="checkbox" name="video-category"> Game
+					<input type="checkbox" name="video-category"> Music
+					<input type="checkbox" name="video-category"> Developer
+					<input type="checkbox" name="video-category"> Others
+				</div>
+			</div>
+
+			<div class="row">
+				<label for="status">Status:</label>
+				<div class="form-control">
+					<input type="checkbox" name="status">Active
+				</div>
+			</div>
+
+			<div class="row">
+				<label>&nbsp;</label>
+				<div class="form-control">
+					<input type="submit" name="submit" value="Submit" onclick="return isValidForm();">&nbsp;
+					<input type="reset" name="reset" value="Reset">
+				</div>
+			</div>
+		</form>
+
+	</fieldset>
+
+
+	<script type="text/javascript" src="js/script.js">
+		
+	</script>
+</body>
+</html>
